@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hously — Современный архитектурный опыт</title>
+  <meta name="description" content="Мы создаём пространства, которые возвышают жизнь. Утончённый архитектурный опыт, где форма, свет и замысел встречаются.">
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       HEADER
+       ======================================== -->
+  <header class="header" id="site-header">
+    <nav class="container header-nav">
+      <a href="#" class="header-logo" aria-label="Hously - на главную">
+        <!-- Inline SVG logo for reliability -->
+        <svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="18" font-family="Satoshi, system-ui, sans-serif" font-size="20" font-weight="700" fill="white" letter-spacing="0.05em">HOUSLY</text>
+        </svg>
+      </a>
+
+      <ul class="header-links">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">Философия</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+
+      <a href="#contact" class="header-cta">Связаться</a>
+
+      <button class="mobile-toggle" aria-label="Открыть меню" onclick="toggleMenu()">
+        <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="4" y1="8" x2="20" y2="8"></line>
+          <line x1="4" y1="16" x2="20" y2="16"></line>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#hero" onclick="toggleMenu()">Главная</a></li>
+        <li><a href="#about" onclick="toggleMenu()">Философия</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Проекты</a></li>
+        <li><a href="#services" onclick="toggleMenu()">Услуги</a></li>
+        <li><a href="#faq" onclick="toggleMenu()">Вопросы</a></li>
+      </ul>
+      <a href="#contact" class="header-cta" style="display:inline-flex" onclick="toggleMenu()">Связаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hously-background-2EwTldVuhRGzuYt8fdA1mMsKwGiog3.png"
+          alt="Минималистичный архитектурный интерьер"
+        >
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-label">Архитектурная студия</p>
+        <h1 class="hero-title">
+          Мы создаём пространства,<br>
+          <span class="accent">возвышающие жизнь</span>
+        </h1>
+      </div>
+
+      <div class="hero-fg">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hously-foreground-G8EBCBKpJ09MujtuyBruDFhZzCxqiU.png"
+          alt="Мраморная кухонная столешница"
+        >
+      </div>
+    </section>
+    <section class="philosophy" id="about">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-left">
+            <p class="section-label">Наша философия</p>
+            <h2 class="section-title section-title-lg">
+              Дизайн с<br>
+              <span class="highlighted">замыслом
+                <svg viewBox="0 0 200 12" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 8 Q50 2, 100 6 T200 8" stroke="rgb(251,146,60)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="0"/>
+                </svg>
+              </span>
+            </h2>
+            <div class="philosophy-image">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/exterior-WlyBKcHmDO6jVzKBN21loqLicBV8cU.png"
+                alt="Архитектурный эскиз рабочего пространства"
+              >
+            </div>
+          </div>
+
+          <div class="philosophy-right">
+            <p class="philosophy-desc">
+              Архитектура — это больше, чем структура. Это то, как мы воспринимаем мир. Мы создаём пространства, питающие
+              человеческий дух.
+            </p>
+
+            <div class="philosophy-item fade-in-up">
+              <span class="philosophy-item-number">01</span>
+              <div>
+                <h3>Минимализм, а не пустота</h3>
+                <p>Каждый элемент имеет цель и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.</p>
+              </div>
+            </div>
+
+            <div class="philosophy-item fade-in-up">
+              <span class="philosophy-item-number">02</span>
+              <div>
+                <h3>Дизайн, ведомый архитектурой</h3>
+                <p>Планировки, вдохновлённые структурой, ритмом и материальностью. Здания, говорящие через пропорции и свет.</p>
+              </div>
+            </div>
+
+            <div class="philosophy-item fade-in-up">
+              <span class="philosophy-item-number">03</span>
+              <div>
+                <h3>Деликатная динамика</h3>
+                <p>Движение поддерживает впечатление, но никогда не отвлекает. Естественное движение, как свет, скользящий по комнате.</p>
+              </div>
+            </div>
+
+            <div class="philosophy-item fade-in-up">
+              <span class="philosophy-item-number">04</span>
+              <div>
+                <h3>Вневременная эстетика</h3>
+                <p>Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects-header">
+          <div>
+            <p class="section-label">Избранные работы</p>
+            <h2 class="projects-title">Наши проекты</h2>
+          </div>
+          <a href="#" class="projects-link">
+            Все проекты
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hously-1-C3jz0qxRdlkAM47X0nTqxJP1Bs1EC8.png"
+                alt="Villa Serena"
+              >
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>Villa Serena</h3>
+                <p class="project-meta">Жилое &middot; Малибу, Калифорния</p>
+              </div>
+              <span class="project-year">2024</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hously-2-j7UUnVKuGvRtR1uzhHgpLIoOsVUqiL.png"
+                alt="The Glass Pavilion"
+              >
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>The Glass Pavilion</h3>
+                <p class="project-meta">Коммерческое &middot; Токио, Япония</p>
+              </div>
+              <span class="project-year">2023</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hously-3-enFrq64Vo9g3WRdwRQmF4WU1sXlDJq.png"
+                alt="Casa Terra"
+              >
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>Casa Terra</h3>
+                <p class="project-meta">Жилое &middot; Лиссабон, Португалия</p>
+              </div>
+              <span class="project-year">2023</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hously-4-F7otzFnOkf3YHjoSjKiGdvLxqp1pIg.png"
+                alt="Nordic Retreat"
+              >
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>Nordic Retreat</h3>
+                <p class="project-meta">Гостеприимство &middot; Осло, Норвегия</p>
+              </div>
+              <span class="project-year">2024</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="expertise" id="services">
+      <div class="container">
+        <div class="expertise-intro">
+          <p class="section-label">Что мы делаем</p>
+          <h2 class="section-title section-title-lg">
+            <span class="highlighted">Мастерство
+              <svg viewBox="0 0 200 12" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8 Q50 2, 100 6 T200 8" stroke="rgb(251,146,60)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="0"/>
+              </svg>
+            </span>, отточенное<br>
+            практикой
+          </h2>
+          <p class="expertise-desc">
+            Каждый проект опирается на десятилетия коллективного опыта, создавая архитектуру, которая одновременно
+            инновационна и вневременна.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+
+          <div class="expertise-card fade-in-up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+              <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+            <h3>Жилой дизайн</h3>
+            <p>Создание домов, сочетающих красоту и комфорт, где каждое пространство служит и форме, и функции.</p>
+          </div>
+
+          <div class="expertise-card fade-in-up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+              <path d="M9 22v-4h6v4"></path>
+              <path d="M8 6h.01"></path>
+              <path d="M16 6h.01"></path>
+              <path d="M12 6h.01"></path>
+              <path d="M12 10h.01"></path>
+              <path d="M12 14h.01"></path>
+              <path d="M16 10h.01"></path>
+              <path d="M16 14h.01"></path>
+              <path d="M8 10h.01"></path>
+              <path d="M8 14h.01"></path>
+            </svg>
+            <h3>Коммерческая архитектура</h3>
+            <p>Проектирование рабочих пространств, вдохновляющих на продуктивность и отражающих ценности прогрессивных организаций.</p>
+          </div>
+
+          <div class="expertise-card fade-in-up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path>
+              <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"></path>
+              <path d="M5 18v2"></path>
+              <path d="M19 18v2"></path>
+            </svg>
+            <h3>Интерьерная архитектура</h3>
+            <p>Создание интерьеров, гармонирующих с архитектурной оболочкой, формирующих целостный пространственный опыт.</p>
+          </div>
+
+          <div class="expertise-card fade-in-up">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"></path>
+              <path d="M7 16v6"></path>
+              <path d="M13 19v3"></path>
+              <path d="M18 12v.2A3 3 0 0 1 16.9 18H13a3 3 0 0 1-1-5.8V12a3 3 0 0 1 6 0Z"></path>
+            </svg>
+            <h3>Градостроительство</h3>
+            <p>Формирование сообществ через продуманную интеграцию общественных пространств, сооружений и природных элементов.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-intro">
+          <p class="section-label">Вопросы</p>
+          <h2 class="section-title">Вопросы и ответы</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Где расположены ваши проекты?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Наша студия базируется в Сан-Франциско, но мы работаем над проектами по всей Северной Калифорнии и в избранных локациях по всей стране. Мы верим в архитектуру, которая откликается на конкретный контекст и сообщество.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Каковы сроки проектирования?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Сроки проектов варьируются в зависимости от масштаба и сложности. Типичный жилой проект занимает 6-12 месяцев от концепции до проектной документации. Мы тесно сотрудничаем с клиентами, чтобы установить реалистичные сроки для продуманного развития дизайна.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Как вы подходите к устойчивому дизайну?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Устойчивость — неотъемлемая часть нашей практики, а не дополнение. Мы отдаём приоритет пассивным стратегиям проектирования, подбору материалов, энергоэффективности и долговечности. Каждый проект создаётся для минимизации воздействия на окружающую среду при максимальном комфорте и связи с природой.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Какие услуги вы предлагаете?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Мы предоставляем полный спектр архитектурных услуг, включая генеральное планирование, эскизное проектирование, разработку дизайна, проектную документацию и авторский надзор. Мы адаптируем наши услуги под конкретные потребности вашего проекта.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Вы работаете с существующими зданиями?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Безусловно. Нам нравится вызов проектов по реконструкции и адаптивному повторному использованию. Будь то историческая реставрация или современная пристройка — мы подходим к существующим сооружениям с уважением, вводя их в диалог с современной жизнью.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Как начать работу с вами?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Начните с первичной консультации, где мы обсудим ваше видение, участок, бюджет и сроки. Это поможет нам понять, подходим ли мы для вашего проекта. Затем мы подготовим индивидуальное техническое задание и коммерческое предложение.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-inner">
+          <p class="section-label">Начать проект</p>
+
+          <h2 class="cta-title">
+            Готовы создать<br>
+            нечто <span class="highlighted">выдающееся
+              <svg viewBox="0 0 200 12" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8 Q50 2, 100 6 T200 8" stroke="rgb(251,146,60)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="0"/>
+              </svg>
+            </span>?
+          </h2>
+
+          <p class="cta-desc">
+            Давайте обсудим, как воплотить вашу идею в жизнь. Каждое великое пространство начинается с разговора.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="mailto:hello@hously.com" class="cta-btn-primary">
+              Начать разговор
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="tel:+1234567890" class="cta-btn-secondary">
+              Запланировать звонок
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <svg class="footer-logo" width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="18" font-family="Satoshi, system-ui, sans-serif" font-size="20" font-weight="700" fill="currentColor" letter-spacing="0.05em">HOUSLY</text>
+          </svg>
+          <p>
+            Мы создаём пространства, которые возвышают жизнь. Утончённый архитектурный опыт, где форма, свет и замысел встречаются.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Студия</h4>
+          <ul>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="mailto:hello@hously.com">hello@hously.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hously. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Конфиденциальность</a>
+          <a href="#">Условия</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('open');
+      if (menu.classList.contains('open')) {
+        header.classList.add('scrolled');
+      }
+    }
+
+    // FAQ toggle
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+      });
+
+      // Toggle clicked
+      if (!wasOpen) {
+        item.classList.add('open');
+      }
+    }
+
+    // Intersection Observer for fade-in animations
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    const fadeObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fadeElements.forEach(function(el) {
+      fadeObserver.observe(el);
+    });
+  </script>
+
+</body>
+</html>
